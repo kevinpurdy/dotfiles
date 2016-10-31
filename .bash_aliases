@@ -1,0 +1,8 @@
+alias gcal='gcalcli'
+alias agenda='gcalcli agenda 12am 48h'
+alias inbox='rtm ls list:inbox'
+alias work='rtm ls list:work'
+alias personal='rtm ls list:personal'
+alias week='gcalcli calw'
+alias nextweek='gcalcli calw 1 Sunday'
+alias weather='curl wttr.in'
