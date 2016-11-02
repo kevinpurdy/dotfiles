@@ -8,6 +8,10 @@ set sort = reverse-date
 set recall = no
 set sidebar_visible = no
 
+set smart_wrap
+set pager_context=2
+set forward_format="Fwd: %s"
+
 bind editor <space> noop
   macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
   macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash"
