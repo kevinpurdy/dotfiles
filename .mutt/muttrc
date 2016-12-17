@@ -1,8 +1,8 @@
 
-source "~/.mutt/gmail/muttrc.gmail"
+source "~/.mutt/personal/account.personal"
 
-macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/gmail/muttrc.gmail<enter><change-folder>!<enter>'
-macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/wirecutter/muttrc.workmail<enter><change-folder>!<enter>'
+macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/personal/account.personal<enter><change-folder>!<enter>'
+macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/work/account.work<enter><change-folder>!<enter>'
 
 set sort = reverse-date
 set recall = no
