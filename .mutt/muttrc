@@ -4,7 +4,10 @@ source "~/.mutt/personal/account.personal"
 macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/personal/account.personal<enter><change-folder>!<enter>'
 macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/work/account.work<enter><change-folder>!<enter>'
 
-set sort = reverse-date
+set sort = threads
+set sort_browser = date
+set sort_aux = reverse-last-date-received
+
 set recall = no
 set sidebar_visible = no
 
