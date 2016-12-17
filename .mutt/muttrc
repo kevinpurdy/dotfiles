@@ -6,7 +6,7 @@ macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/work/account.work<
 
 set sort = threads
 set sort_browser = date
-set sort_aux = reverse-last-date-received
+set sort_aux=reverse-last-date-received
 
 set recall = no
 set sidebar_visible = no
@@ -36,3 +36,8 @@ bind editor <space> noop
   bind  index	    U  undelete-pattern #Undelete messages matching a pattern
   bind  pager       u  exit             #Use "u" to back out of a message, like Gmail
 
+  bind  attach      <return> view-mailcap
+
+alternative_order text/html text/enriched text/plain
+unauto_view *
+auto_view text/html
