@@ -1,8 +1,12 @@
 
 source "~/.mutt/personal/account.personal"
+set mailcap_path="~/.mutt/mailcap"
 
 macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/personal/account.personal<enter><change-folder>!<enter>'
 macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/work/account.work<enter><change-folder>!<enter>'
+
+set query_command="goobook query '%s'"
+bind editor <Tab> complete-query
 
 set sort = threads
 set sort_browser = date
@@ -35,9 +39,8 @@ bind editor <space> noop
   bind  index,pager c  mail 		#Compose
   bind  index	    U  undelete-pattern #Undelete messages matching a pattern
   bind  pager       u  exit             #Use "u" to back out of a message, like Gmail
-
   bind  attach      <return> view-mailcap
 
-alternative_order text/html text/enriched text/plain
-unauto_view *
-auto_view text/html
+#  alternative_order text/plain text/enriched text/html
+  auto_view text/html
+  macro index,pager H "<pipe-message>htmail-decode<return>" "render html mail using htmail-view"
