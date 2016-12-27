@@ -1,6 +1,6 @@
 
 source "~/.mutt/personal/account.personal"
-set mailcap_path="~/.mutt/mailcap"
+# set mailcap_path="~/.mutt/mailcap"
 
 macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/personal/account.personal<enter><change-folder>!<enter>'
 macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/work/account.work<enter><change-folder>!<enter>'
@@ -43,4 +43,4 @@ bind editor <space> noop
 
 #  alternative_order text/plain text/enriched text/html
   auto_view text/html
-  macro index,pager H "<pipe-message>htmail-decode<return>" "render html mail using htmail-view"
+  macro index,pager H "<pipe-message>htmail-decode<return>" "render html mail using htmail-view" #Doesn't work without htmail-view install, obvs
