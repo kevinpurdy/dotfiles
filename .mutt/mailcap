@@ -1,2 +1,4 @@
-text/html; google-chrome %s --new-window; copiousoutput;
+text/html; google-chrome --new-window %s; needsterminal;
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+# text/html; /usr/lib/htmail-view/wmctrl-wrapper file://%s; test=test -n "$DISPLAY"; nametemplate=%s.html;
 
