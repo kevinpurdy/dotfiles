@@ -30,6 +30,8 @@ bind editor <space> noop
   macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
   macro index,pager gt "<change-folder>=[Gmail]/Sent Mail<enter>"	"Go to 'Sent Mail'"
 
+  macro index gl <change-folder>
+
   macro index,pager !  <save-message>=[Gmail]/Spam<enter><enter> "Report spam"
 
   bind  index,pager a  group-reply	#Reply all  
