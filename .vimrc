@@ -2,6 +2,8 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+setlocal fo+=aw
+
 syntax enable
 set background=dark
 colorscheme solarized

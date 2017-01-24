@@ -19,6 +19,8 @@ set smart_wrap
 set pager_context=2
 set forward_format="Fwd: %s"
 
+set text_flowed=yes
+
 bind editor <space> noop
   macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
   macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash"
@@ -27,6 +29,8 @@ bind editor <space> noop
   macro index gs "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
   macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
   macro index,pager gt "<change-folder>=[Gmail]/Sent Mail<enter>"	"Go to 'Sent Mail'"
+
+  macro index gl <change-folder>
 
   macro index,pager !  <save-message>=[Gmail]/Spam<enter><enter> "Report spam"
 
