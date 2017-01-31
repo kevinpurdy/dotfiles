@@ -40,6 +40,8 @@ bind editor <space> noop
   bind  pager       x  tag-message	#Select Conversation
   bind  index,pager s  flag-message	#Star a message
 
+  bind  index       o  display-message #Gmail habits die hard
+
   bind  index,pager c  mail 		#Compose
   bind  index	    U  undelete-pattern #Undelete messages matching a pattern
   bind  pager       u  exit             #Use "u" to back out of a message, like Gmail
