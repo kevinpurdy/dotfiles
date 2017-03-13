@@ -105,7 +105,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -124,10 +123,10 @@ fi
 
 task ( )
 {
-	rtm add "$1" l:inbox t:cli
+        rtm add "$1" l:inbox t:cli
 }
 
 q ( )
 {
-	gcalcli quick "$1" --calendar Kevin
-}
+        gcalcli quick "$1" --calendar Kevin
+
