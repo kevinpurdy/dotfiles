@@ -1,6 +1,6 @@
 ## Apt packages
 
-vim-gtk mutt-patched python-pip
+vim-gtk mutt-patched python-pip libmime-tools-perl
 
 ## Pip
 
