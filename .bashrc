@@ -128,5 +128,5 @@ task ( )
 
 q ( )
 {
-        gcalcli quick '$1' --calendar Kevin
+        gcalcli quick "'$1'" --calendar Kevin
 }
