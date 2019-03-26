@@ -1,0 +1,45 @@
+{
+  "dateformat": "ddd mmm-dd",
+  "plannerDateformat": "ddd",
+  "completed": false,
+  "hideDue": false,
+  "plain": false,
+  "status": true,
+  "styles": {
+    "list": "yellow.underline",
+    "index": "dim",
+    "priority": {
+      "0": "reset",
+      "1": "red",
+      "2": "blue",
+      "3": "cyan"
+    },
+    "completed": "dim",
+    "notes": "reset",
+    "tags": "magenta",
+    "due": "green"
+  },
+  "aliases": [
+    {
+      "name": "overdue",
+      "description": "Display all tasks that are overdue",
+      "command": "lsd",
+      "args": "dueBefore:today AND status:incomplete"
+    },
+    {
+      "name": "today",
+      "description": "Everything due today and before, priority first",
+      "command": "lsp",
+      "args": "due:today OR dueBefore:today"
+    },
+    {
+      "name": "work",
+      "description": "Tagged work, due today and before",
+      "command": "lsp",
+      "args": "due:today OR dueBefore:today AND tag:work AND list:todo OR list:Inbox"
+    }
+  ],
+  "plugins": [
+    "{{HOME}}/.rtm.plugins/"
+  ]
+}

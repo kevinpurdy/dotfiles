@@ -1,0 +1,7 @@
+alias weather='curl wttr.in'
+alias week='gcalcli calw'
+alias month='gcalcli calm'
+alias gcal='gcalcli'
+alias agenda='gcalcli agenda 12am 48h'
+alias today='rtm today'
+alias work='rtm work'
